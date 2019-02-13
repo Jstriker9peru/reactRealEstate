@@ -67,7 +67,7 @@ export default class Listings extends Component {
         // this is long view
         return (
           <div className="col-md-12 col-lg-6" key={index}>     
-            <div className="listing">
+            <div className="listing longview">
               <div className="listing-image" style={{background: `url(${listing.image}) center center`}}>
                 <span className="address">{listing.address}</span>
                 <div className="details">

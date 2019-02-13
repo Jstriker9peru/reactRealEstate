@@ -480,7 +480,7 @@ var Listings = function (_Component) {
             { className: 'col-md-12 col-lg-6', key: index },
             _react2.default.createElement(
               'div',
-              { className: 'listing' },
+              { className: 'listing longview' },
               _react2.default.createElement(
                 'div',
                 { className: 'listing-image', style: { background: 'url(' + listing.image + ') center center' } },
