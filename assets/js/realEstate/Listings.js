@@ -23,7 +23,7 @@ export default class Listings extends Component {
       if (this.props.globalState.view == 'box') {
         // this is box view
         return (
-          <div className="col-md-3" key={index}>     
+          <div className="col-md-3 grid-view" key={index}>     
             <div className="listing">
               <div className="listing-image" style={{background: `url(${listing.image}) center center`}}>
                 <span className="address">{listing.address}</span>
@@ -44,7 +44,7 @@ export default class Listings extends Component {
                       </div>
                       <div className="bedrooms">
                         <i className="fas fa-bed" aria-hidden="true"></i>
-                        <span>{listing.rooms} bedrooms</span>
+                        <span>{listing.rooms} BR</span>
                       </div>
                     </div>
                     <div className="view-btn">

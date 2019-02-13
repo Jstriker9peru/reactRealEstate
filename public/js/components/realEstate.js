@@ -382,7 +382,7 @@ var Listings = function (_Component) {
           // this is box view
           return _react2.default.createElement(
             'div',
-            { className: 'col-md-3', key: index },
+            { className: 'col-md-3 grid-view', key: index },
             _react2.default.createElement(
               'div',
               { className: 'listing' },
@@ -441,7 +441,7 @@ var Listings = function (_Component) {
                           'span',
                           null,
                           listing.rooms,
-                          ' bedrooms'
+                          ' BR'
                         )
                       )
                     ),

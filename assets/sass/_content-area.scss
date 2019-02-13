@@ -148,6 +148,8 @@
                     text-transform: capitalize;
                 }
                 .details {
+                    margin-top: 0;
+                    padding-top: 0;
                     transition: all .4s ease-in-out;
                     opacity: 0;
                     position: absolute;
@@ -250,6 +252,12 @@
     &:hover {
         background: pink;
         cursor: pointer;
+    }
+}
+
+.grid-view {
+    .view-btn {
+        font-size: .8rem;
     }
 }
 
