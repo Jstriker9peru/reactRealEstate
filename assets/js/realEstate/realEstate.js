@@ -24,7 +24,7 @@ class App extends Component {
       gym: false,
       filteredData: listingsData,
       populateFormsData: '',
-      sortby: 'price-dsc',
+      sortby: 'price-asc',
       view: 'long',
       search: '',
     }
@@ -95,6 +95,30 @@ class App extends Component {
         if (n != null) {
           return true;
         }
+      })
+    }
+
+    if (this.state.elevator == true) {
+      newData = newData.filter(item => {
+        return item.extras.includes('elevator'); 
+      })
+    }
+
+    if (this.state.swimming_pool == true) {
+      newData = newData.filter(item => {
+        return item.extras.includes('swimming pool'); 
+      })
+    }
+
+    if (this.state.finished_basement == true) {
+      newData = newData.filter(item => {
+        return item.extras.includes('finished basement'); 
+      })
+    }
+
+    if (this.state.gym == true) {
+      newData = newData.filter(item => {
+        return item.extras.includes('gym'); 
       })
     }
 

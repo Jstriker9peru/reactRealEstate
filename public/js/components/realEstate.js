@@ -826,7 +826,7 @@ var App = function (_Component) {
       gym: false,
       filteredData: _listingsData2.default,
       populateFormsData: '',
-      sortby: 'price-dsc',
+      sortby: 'price-asc',
       view: 'long',
       search: ''
     };
@@ -909,6 +909,30 @@ var App = function (_Component) {
           if (n != null) {
             return true;
           }
+        });
+      }
+
+      if (this.state.elevator == true) {
+        newData = newData.filter(function (item) {
+          return item.extras.includes('elevator');
+        });
+      }
+
+      if (this.state.swimming_pool == true) {
+        newData = newData.filter(function (item) {
+          return item.extras.includes('swimming pool');
+        });
+      }
+
+      if (this.state.finished_basement == true) {
+        newData = newData.filter(function (item) {
+          return item.extras.includes('finished basement');
+        });
+      }
+
+      if (this.state.gym == true) {
+        newData = newData.filter(function (item) {
+          return item.extras.includes('gym');
         });
       }
 
